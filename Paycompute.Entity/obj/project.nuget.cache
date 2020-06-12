@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+t1drif60VcMNkxqm59xEXScRmeiCHT9vhkCwYLAKEh0nKkaRog7djlBGbevBRg6aQ7aziy1Hwu4qO5YAY3WvQ==",
+  "dgSpecHash": "L9B/BPDO9/XFDC/xR1T66W3J5yK86xEU5hypCVE2voKA2+qQIwUUENb07u6qoA1Poe1v2Y3DPaN0mOsp+lY+0Q==",
   "success": true,
   "projectFilePath": "C:\\Projects\\PaycomputeApp\\Paycompute.Entity\\Paycompute.Entity.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\mario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

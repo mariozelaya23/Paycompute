@@ -22,7 +22,7 @@ namespace Paycompute.Models
         [StringLength(50), Display(Name ="Middle Name")]
         public string MiddleName { get; set; }
 
-        [Required(ErrorMessage = "First Name is required"), StringLength(50, MinimumLength = 2)]
+        [Required(ErrorMessage = "Last Name is required"), StringLength(50, MinimumLength = 2)]
         [RegularExpression(@"^[A-Z][a-zA-Z""'\s-]*$"), Display(Name = "Last Name")]
         public string LastName { get; set; }
 
