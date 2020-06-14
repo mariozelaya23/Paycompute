@@ -1,8 +1,10 @@
-﻿using Paycompute.Entity;
+﻿using Newtonsoft.Json.Serialization;
+using Paycompute.Entity;
 using Paycompute.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +13,8 @@ namespace Paycompute.Services.Implementation
     public class EmployeeService : IEmployeeService
     {
         private readonly ApplicationDbContext _context;
+        private decimal SLRate;
+        private decimal studentLoanAmount;
 
         public EmployeeService(ApplicationDbContext context)
         {
@@ -49,7 +53,17 @@ namespace Paycompute.Services.Implementation
 
         public decimal StudentLoanRepaymentAmount(int id, decimal totalAmount)
         {
-            throw new NotImplementedException();
+            var employee = GetById(id);
+            if (employee.StudentLoan == StudentLoan.Yes && totalAmount > 0)
+            {
+                SLRate = .046m;
+                studentLoanAmount = (totalAmount * SLRate);
+            }
+            else
+            {
+                studentLoanAmount = 0m;
+            }
+            return studentLoanAmount;
         }
 
         public decimal UnionFees(int id)
