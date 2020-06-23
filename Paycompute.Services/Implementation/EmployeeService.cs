@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Serialization;
 using Paycompute.Entity;
 using Paycompute.Persistence;
@@ -37,7 +38,7 @@ namespace Paycompute.Services.Implementation
             await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<Employee> GetAll() => _context.Employees;
+        public IEnumerable<Employee> GetAll() => _context.Employees.AsNoTracking().OrderBy(emp => emp.FullName);
 
         public async Task UpdateAsync(Employee employee)
         {
