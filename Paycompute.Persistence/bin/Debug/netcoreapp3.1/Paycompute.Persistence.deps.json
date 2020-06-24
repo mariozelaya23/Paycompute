@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Paycompute.Persistence/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "2.2.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.4",
@@ -15,6 +16,14 @@
         },
         "runtime": {
           "Paycompute.Persistence.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.3": {
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.3.11125"
+          }
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.4": {
@@ -937,6 +946,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNet.Identity.Core/2.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Mv5FpoaxspE8hlWLE4r1IdZtovg/OyFgVRhxQbx47J4sqdLImN1hnM1lnwCj+/wLmqtqFk/RYMoZ5GAcwm/00g==",
+      "path": "microsoft.aspnet.identity.core/2.2.3",
+      "hashPath": "microsoft.aspnet.identity.core.2.2.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.4": {
       "type": "package",

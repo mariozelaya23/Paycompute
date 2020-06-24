@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fAX6C/5eOgfHiTNw0y/uTy3Bah5NkXNlFN+F9odlTdhMEDH8KH7WEV8xYRp0lMnQDapeHsfWIoA6vHJu0bS/bw==",
+  "dgSpecHash": "I6jcuC98F0RKij0ITY3nP9kmnZmyQ8efda19/iC501D576rHwKHyunL5GMexMBYTrvSPCcs7EO9IDNmRSF0kKw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\PaycomputeApp\\Paycompute.Services\\Paycompute.Services.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mario\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
@@ -172,5 +173,16 @@
     "C:\\Users\\mario\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Identity.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
